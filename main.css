@@ -1,0 +1,40 @@
+ul {
+    font-family: "chivo Mono", monospace;
+    display: flex;
+    gap: 72px;
+    background: teal;
+    border: 1px groove white;
+    border-radius: 20px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(233, 212, 208);
+    padding: 10px;
+    transition: 0.5s ease;
+}
+
+ul:hover li a {
+    color: rgb(255, 255, 255);
+}
+
+ul:hover li a:not(:hover) {
+    color: teal;
+    opacity: 0.3;
+    filter: blur(2px);
+}
+
+.d-block {
+    filter: grayscale(100%);
+}
+
+.d-block:hover {
+    filter: grayscale(0%);
+}
